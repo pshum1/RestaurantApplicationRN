@@ -3,6 +3,7 @@
   "httpmessage": "success",
   "response": [
     {
+      "key": "11",
       "category": "Cost effective",
       "restaurantList": [
         {
@@ -22,6 +23,7 @@
       ]
     },
     {
+      "key": "12",
       "category": "Bit Pricier",
       "restaurantList": [
         {
@@ -41,6 +43,7 @@
       ]
     },
     {
+      "key": "13",
       "category": "Big Spender!",
       "restaurantList": [
         {

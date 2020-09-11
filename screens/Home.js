@@ -7,15 +7,45 @@ import {
   FlatList,
   TouchableOpacity,
 } from "react-native";
-import { Searchbar } from "react-native-paper";
+
+import { SearchBar } from "react-native-elements";
 
 const data = require("../src/getRestaurantsAPI.json").response;
+
+class Search extends React.Component {
+  state = {
+    search: '',
+  };
+
+  updateSearch = (search) => {
+    this.setState({search});
+  };
+
+  render() {
+    const { search } = this.state;
+
+    return(
+      <SearchBar placeholder="Search..."
+      onChangeText={this.updateSearch}
+      value={search}
+      lightTheme = {true}
+      round = {true}
+      placeholderTextColor = "#FFF"
+      containerStyle = {styles.search}
+      inputContainerStyle = {styles.search}
+      inputStyle = {styles.input}
+      />
+    )
+  }
+}
+
+
 
 export default function Home({ navigation }) {
   //const navigation = useNavigation();
   return (
     <View style={styles.container}>
-      <Searchbar style={styles.search} placeholder="Search" />
+      <Search style={styles.search}/>
       <FlatList
         data={data}
         renderItem={({ item }) => {
@@ -64,6 +94,9 @@ const styles = StyleSheet.create({
   search: {
     borderRadius: 45,
     backgroundColor: "#C0C0C0",
+  },
+  input:{
+    color: "#5c5c5c"
   },
   lineSep: {
     borderBottomColor: "#C0C0C0",
