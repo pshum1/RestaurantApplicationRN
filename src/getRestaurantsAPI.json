@@ -1,0 +1,63 @@
+{
+  "httpcode": 200,
+  "httpmessage": "success",
+  "response": [
+    {
+      "category": "Cost effective",
+      "restaurantList": [
+        {
+          "key": "1",
+          "name": "Fish city",
+          "imageUrl": "https://cdn.pixabay.com/photo/2016/09/21/13/54/fish-1684828_1280.jpg",
+          "rating": "4.1",
+          "review": "780"
+        },
+        {
+          "key": "2",
+          "name": "Fast Fish",
+          "imageUrl": "https://cdn.pixabay.com/photo/2014/02/04/15/47/fish-258048_1280.jpg",
+          "rating": "4.3",
+          "review": "990"
+        }
+      ]
+    },
+    {
+      "category": "Bit Pricier",
+      "restaurantList": [
+        {
+          "key": "3",
+          "name": "Salmon House",
+          "imageUrl": "https://cdn.pixabay.com/photo/2016/03/05/19/02/salmon-1238248_1280.jpg",
+          "rating": "4.5",
+          "review": "935"
+        },
+        {
+          "key": "4",
+          "name": "Seafood n Greens",
+          "imageUrl": "https://cdn.pixabay.com/photo/2016/03/05/20/15/asian-1238725_1280.jpg",
+          "rating": "3.9",
+          "review": "420"
+        }
+      ]
+    },
+    {
+      "category": "Big Spender!",
+      "restaurantList": [
+        {
+          "key": "5",
+          "name": "Unagi",
+          "imageUrl": "https://cdn.pixabay.com/photo/2015/06/03/12/04/fine-dining-796352_1280.jpg",
+          "rating": "4.9",
+          "review": "849"
+        },
+        {
+          "key": "6",
+          "name": "Foi",
+          "imageUrl": "https://cdn.pixabay.com/photo/2015/03/26/10/28/restaurant-691397_1280.jpg",
+          "rating": "4.3",
+          "review": "502"
+        }
+      ]
+    }
+  ]
+}
